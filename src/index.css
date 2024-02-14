@@ -1,0 +1,84 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@500&family=Mukta:wght@200;300;400;500;600;700;800&family=Nosifer&family=Noto+Sans:wght@700&family=Preahvihear&family=Protest+Revolution&family=Roboto:wght@100;300;400;500&family=Ubuntu:wght@400;500;700&family=Work+Sans:wght@300;400;700;900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  font-family: "Mukta", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+body {
+  background-color: #0b002bfe;
+}
+.ex-card:hover {
+  background-color: #212121df;
+  transition: 0.2s;
+}
+
+.menu {
+  /* background-color: aliceblue; */
+  margin-top: 14px;
+}
+
+.search-bar {
+  text-align: center;
+  /* margin: 4px; */
+}
+.search-bar input {
+  height: 2rem;
+  width: 18rem;
+  padding: 8px;
+  outline: none;
+  border-radius: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  .ex-card {
+    /* background-color: aqua; */
+    flex-direction: column;
+    border: 2px solid cyan;
+    align-items: center;
+    justify-content: space-between;
+    height: 210px;
+    font-size: 20px;
+  }
+
+  .ex-card .name {
+    width: 100%;
+  }
+
+  .ex-card .pic img {
+    height: 90px;
+    width: 90px;
+    /* background-color: aliceblue; */
+  }
+
+  .ex-card .rank {
+    padding-left: 0;
+  }
+
+  .coin-details {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .coin-info,
+  .graph {
+    margin: 0;
+    padding: 14px;
+    width: 100%;
+  }
+
+  .btns {
+    text-align: center;
+  }
+
+  .td-model {
+    height: 80vh;
+  }
+}
